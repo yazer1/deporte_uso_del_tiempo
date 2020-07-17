@@ -78,10 +78,9 @@ tabla15<-ctable(enut$Pdepfsemrec, enut$edadrecod, prop = "c",
 tabla16<-ctable(enut$Pdepfsemrec, enut$sexoRec, prop = "c",
        weights = enut$pond, style = 'rmarkdown', headings = F)
 
+tabla18<-table(enut$sati_tmp_recod, enut$edadrecod)
 
-table(enut$sati_tmp_recod, enut$edadrecod)
-
-table(enut$Diasemrec, enut$edadrecod)
+tabla17<-table(enut$Diasemrec, enut$edadrecod)
 
 # Estadísticos descriptivos variable edad
 summary(enut$edad)
@@ -101,7 +100,7 @@ with(enut, stby(data= edad, INDICES = sati_tmp_recod,
 
 #lista de resultados
 resultados <- list(tabla1, tabla2, tabla3, tabla4, tabla5, tabla6, tabla7, tabla8,
-                   tabla9, tabla10, tabla11, tabla12, tabla13, tabla14, tabla15, tabla16)
+                   tabla9, tabla10, tabla11, tabla12, tabla13, tabla14, tabla15, tabla16, tabla17, tabla18)
 
 saveRDS(resultados, file = "resultados-enut.rds") 
 
