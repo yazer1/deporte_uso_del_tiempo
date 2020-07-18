@@ -1,6 +1,6 @@
 ---
 title: "Uso del tiempo y Deporte"
-subtitulo: "Exploracion del Uso del tiempo y practica deportiva en Santiago de Chile"
+subtitle: "Exploracion del Uso del tiempo y practica deportiva en Santiago de Chile"
 author: "Yazer Primera Nader"
 date: "16/7/2020"
 bibliography: biblioteca.bib
@@ -18,13 +18,12 @@ library(dplyr)
 ```{r cargar datos}
 # Con este comando se carga el archivo (lista) que contiene los resultados
 resultados <- readRDS("D:/Nueva carpeta (3)/githud/trabajo/Data/InputData/DataSources/resultados-enut.rds")
-
 ```
 
 
 ## Introducción
 
-El presente tema de trabajo, toma como referencia explorar y analizar los niveles de uso del tiempo libre y practicas deportivas en la poblacion Chilena de 40 años y mas; asi dando a entender por niveles de uso del tiempo y practicas deportivas a la capacidad de los individuos de administrar su tiempo para la practica deportiva que puedan hacer o realizar. es de referenciarse como **Ocio** al tiempo libre que le dedican los individuos a ciertas actividades que no suelen ser o no suelen basarce en el trabajo, jornada laboral, ni mucho menos en las actividades que son basadas en tareas domesticas o atender los servicios del hogar, es decir se pone énfasis en que el uso del tiempo libre es de asociarse con la diversidad de actividades de ocio, juego, recreacion y deporte entre otros. Así mismo, es de considerarse como un tiempo recreativo que se suele usar a discreción, por lo tanto, se puede diferenciar del uso del tiempo que las personas le dedican a ciertas actividades que son obligatorias como: comer, dormir, hacer tareas educativas, bañarse, entre otras. es decir, hacer actividades de cierta necesidad, es por eso, que las practicas de ocio del tiempo libre se marcan en aquellas practicas de uso del tiempo libre donde no se hacen por una obligacion efectuada. posteriormente [@espinosa_gomez_ocupaciones_2006] hacen la referencia del tiempo como la toma o interiorización de un quehacer propio del ser humano, donde estos quehaceres se han valorado por el pasar del tiempo a través de la historia y la cultura en general; en palabras textuales "el tiempo libre tiene ancentrales relaciones con las diversas formas de producción, cosmovisión, desarrollo material e ideologias dominantes", en tal sentido de la palabra, estas autoras hacen de la consideración del concepto o categoria del tiempo libre y su practica como una construcción social de la realidad cotidiana en que vivimos.
+El presente tema de trabajo, toma como referencia explorar y analizar los niveles de uso del tiempo libre y practicas deportivas en la poblacion Chilena de 40 años y mas; asi dando a entender por niveles de uso del tiempo y practicas deportivas a la capacidad de los individuos de administrar su tiempo para la practica deportiva que puedan hacer o realizar. es de referenciarse como **Ocio** al tiempo libre que le dedican los individuos a ciertas actividades que no suelen ser o no suelen basarce en el trabajo, jornada laboral, ni mucho menos en las actividades que son basadas en tareas domesticas o atender los servicios del hogar, es decir se pone énfasis en que el uso del tiempo libre es de asociarse con la diversidad de actividades de ocio, juego, recreacion y deporte entre otros. Así mismo, es de considerarse como un tiempo recreativo que se suele usar a discreción, por lo tanto, se puede diferenciar del uso del tiempo que las personas le dedican a ciertas actividades que son obligatorias como: comer, dormir, hacer tareas educativas, bañarse, entre otras. es decir, hacer actividades de cierta necesidad, es por eso, que las practicas de ocio del tiempo libre se marcan en aquellas practicas de uso del tiempo libre donde no se hacen por una obligacion efectuada. posteriormente [@espinosa_gomez_2006] hacen la referencia del tiempo como la toma o interiorización de un quehacer propio del ser humano, donde estos quehaceres se han valorado por el pasar del tiempo a través de la historia y la cultura en general; en palabras textuales "el tiempo libre tiene ancentrales relaciones con las diversas formas de producción, cosmovisión, desarrollo material e ideologias dominantes", en tal sentido de la palabra, estas autoras hacen de la consideración del concepto o categoria del tiempo libre y su practica como una construcción social de la realidad cotidiana en que vivimos.
 
 posteriormente, se debe evidenciar que de acuerdo con [@paletaraneda_bienestar_2012] es relevante considerar que el tiempo libre es de relacionarse con la libertad y el disfrute de las practicas o actividades bien sean de indoles deportivas, recreativas, ludicas, entre otros. Similarmente, es de asociarse a la satisfacción de caracter preferencial indivudal, pero a su vez, sobre ciertas actividades que los individuos valoran para su bienestar y el desarrollo de sus capacidades.Por otra parte, la OMS y la UNESCO han emitido declaraciones donde es de considerar al tiempo libre como un factor fundamental para la promción del desarrollo de los grupos y pueblos. Es decir, que de acuerdo con la OMS y la UNESCO en la carta de ginebra de 1970 sobre **los derechos del tiempo libre** bajo el contexto de la conferencia mundial de recreación y tiempo libre; es de destacar, estos articulos: 
 **ART. 4**: "toda persona tiene derecho a conocer y participar en todo tipo de recreación durante su tiempo libre, actividades tales como deporte, juegos al aire libre, viajes, teatro, arte visual, musical, ciencias y manualidades, sin distinción de edad, sexo o nivel de educacción".
@@ -35,43 +34,125 @@ Es por eso, que es relación con las actividades del tiempo libre en adultos hip
 
 el proposito de los anteriores conceptos es aclararlos en el trabajo tomando como análisis los datos de la encuesta Nacional del Uso del Tiempo ENUT 2015, nos suele permitir conocer de mas a fondo, cuánto tiempo libre poseen, cómo lo distribuyen, qué satisfechos se encuentran con su tiempo libre las personas destinadas a actividades de ocio y vida social como construcción de su realidad cotidiana. 
 
-# Objetivo del trabajo.
+## Objetivo del trabajo.
 
 Identificar los niveles de uso del tiempo libre y habitos de practicas deportivas en la población de santiago de Chile mayores de 40 años y mas en los ambitos de la vida cotidiana.
 
 Explorar y proveer informacion sobre la relación entre el uso del tiempo libre y practicas de actividades deportivas segun la variable, edad, genero y satisfacion del tiempo libre.
 
-# Metodología.
+## Metodología.
 
 Para la realizacion de este breve informe se tendrá presente la utilización de la Encuesta Nacional del Uso del Tiempo ENUT-20015, donde esta encuesta, como señala su ficha técnica; conto una particularidad de sus instrumentos de medición donde resaltamos un instrumento medidor como el cuestionario de uso del tiempo, donde todo su universo muestral son todas aquellas personas de 12 años en adelante, para asi tener una unidad de analisis que corresponda a las personas que integren los hogares y las actividades que sulen declarar en la encuesta. 
 De acuerdo, con la ficha técnica de ENUT-2015, los indicadores hacen referencia a las relaciones de grupos de población, sobre todo a la participación de sus actividades, y ademas de el tiempo que destinas para dichas actividades encuestadas. donde estos indicadores lo dividen como: a) la participación en la realización de una actividad y b) tiempo destinado a la realización de la actividad.
 
-# Variables muestrales
+## Variables muestrales
 
 para el desarrollo y analisis del trabajo muestral sobre el uso del tiempo y practica deportivas, se pretendra realizar un análisis correlacional entre las varibales discretas, con esto se pretende analizar las siguentes variables entorno al informe nuestral que se requiere. a) sexo: hombre - mujer, b) edad, c)satisfacion del tiempo libre, incomplacido, complacido, totalmente complacido, D) dia de semana, E) fin de semana.
 
 \newpage
 
-# Tabla de Resultados Muestrales
 
-A continuación, se mostraran los resultados preliminares de las tablas seleccionadas como ejemplos.
+## Tabla de Resultados Muestrales
 
-# Tabla N.1 
+A continuación, se mostraran los resultados preliminares de las tablas seleccionadas como ejemplos; por otra parte, es de referenciar que deacuerdo con la encuesta ENUT-2015 una de las dimensiones que afectan la percepción de una vida de bienestar es la de no contar con un tiempo libre adeacudo en que se pueda utilizar para el bienestar propio de los individuos, similarmente para [@castillo_espacio_2017] al recurrir a los conceptos o categorias de espacio y tiempo, tenemos que referirnos a realidades fisicas mensurables y objetivables, porque, estas realidades se sustentan y tambien se organizan en nuestras vidas cotidianas.Por tanto, en Chile se presenta uno de los peores equilibrios de vida, al pretender combinar los usos del tiempo con el trabajo, con la familia, con los compromisos personale, con el disfrute y tambien con la recreación u Ocio; para eso, hay que tener presente que para [@castillo_espacio_2017] elespacio y tiempo pueden ser realidades sujetivas percibidas de modo distinto segun las personas y sus experiencias vividas.
 
-nos muestra la satisfacion del tiempo libre de las personas seleccionadas en la encuesta con su genero. 
+## Tabla N.1
+En la **tabla N.1** nos muestra la satisfacion del tiempo libre de las personas seleccionadas en la encuesta de acuerdo con su genero, partiendo, de quue la estimacion del tiempo que le dedican los individuos al ocio, practicas deportivas y la vida social es alrededor de 6 horas en total, pero no diarias, pero sobre todo el uso del tiempo libre de estimacion no es igual y benefico de acuerdo a sus edades; en cuanto a la tabla 1 sobre la satisfación del tiempo libre de acuerdo a su genro, podemos observar que de un total de 3598 mujeres, se expresa que las  mujeres con un 62% se sienten incomplacidas con su tiempo libre con referencia a los hombres, donde nos muestra un reflejo que la mujer tiene poco o nulo tiempo libre para su uso adecuado.
 
 ```{r tabla1}
-knitr::kable(resultados[[1]], digits = 2, caption = "satisfación del tiempo libre de acuerdo a genero")
+knitr::kable(resultados[[1]], digits = 2, caption = "satisfacion del uso del tiempo libre global", format = "latex", booktabs = T)
 ```
 
-
-
-# Tabla N.2
-en esta tabla tenemos la muestra significativa de la satisfacion del uso del tiempo en frecuencia siemple y de porcentaje
+## Tabla N.2
+En esta tabla tenemos la muestra significativa de la satisfacion del uso del tiempo en frecuencia siemple y de porcentaje.
 
 ```{r tabla2}
-knitr::kable(resultados[[2]], digits = 2, caption = "satisfacion del uso del tiempo libre")
+knitr::kable(resultados[[2]], digits = 2, caption = "frecuencia siemple de satisfacion del uso del tiempo libre")
 ```
 
-#referencias
+
+\newpage
+
+## Tabla N.3
+
+En la **tabla N.3** en esta ocasión la satisfacion del uso tiempo libre de los individuos de acuerdo con su genero es referida a la practica deportiva, recreación y ocio, en cuanto a la tabla 3 sobre la satisfación del tiempo libre de acuerdo a su genro en practica deportiva, se observar que las  mujeres con un 26% se sienten incomplacidas con su tiempo libre para realizar actividades recreativas de ocio con referencia a los hombres, donde nos muestra un reflejo que la mujer tiene poco o nulo tiempo libre para su recreacion y vida social; por otra parte, los hombres con un 44% se sienten totalmente complaciodos con el uso del tiempo libre que le dedican a sus practicas deportivas, de recreacion y vida social en referencia con las mujeres que tienen un 40% en que se sienten totalmente complacidas.
+
+
+```{r tabla3}
+knitr::kable(resultados[[3]][[2]] , digits = 2, caption = "satisfacion del uso del tiempo por genero en practicas deportivas", format = "latex", booktabs = T)
+```
+
+
+## Tabla N.4
+Posteriormente, si observamos la **tabla 4** de frecuencia simple con muestra significativa de la satisfacion del uso del tiempo de acuerdo a la edad de los individuos en las practicas deportivas, se observa que las personas que son adultos mayores que pertenecen a la edad de 60 años y mas con un 11%, son las que más incomplacidas se sienten con su uso del tiempo libre para sus practicas de ocio y recreación deportiva; por circunstancias en que la mayor cantidad de su tiempo estan solos o tienen alguna enfermdad que los puedes limitar a su recreación. 
+
+```{r tabla4}
+knitr::kable(resultados[[4]][[2]], digits = 2, caption = "satisfacion del uso del tiempo por edad en practicas deportivas", format = "latex", booktabs = T)
+```
+
+
+\newpage
+## Tabla N.5
+
+En esta tabla se mostraran los resultados de la frecuencia simple con la muestra del uso del tiempo libre y practica deportiva de acuerdo a los dias de semana estando en sus hogares.
+
+```{r tabla5}
+knitr::kable(resultados[[5]], digits = 2, caption = "frecuencia simple por dias de samana en practicas deportivas")
+```
+
+
+## Tabla N.6
+En cuanto con la **tabla 6** los resultados de la muestra significativa en el uso del tiempo y practicas deportivas en dias de semana de acuerdo a genero, en su totalidad las mujeres muestran que para los dias miercoles su uso del tiempo libre en practicas recreativas y de ocio es menor que en los hombre que para ese mismo dias muestran que tienen un uso del tiempo y practicas deportivas mayor, se observa tambien en la tabla 6 que para el trancurrir de los demas dias de la semana el uso del tiempo libre en las practicas deportivas tanto de hombres como de mujeres es de igual valor.cabe sañalar y preguntarse qué estaria sucediendo con los miercoles en que las mujeres tienen menos uso de su tiempo libre que los hombres.
+
+```{r tabla6}
+knitr::kable(resultados[[6]][[2]], digits = 2, caption = "dia de semana de acuerdo a genero", format = "latex", booktabs = T)
+```
+
+\newpage
+
+## Tabla N.7
+
+Particularmente, en la **tabla 7** se observa los resultados preliminares significatios en el uso del tiempo y practicas deportivas de acuerdo a los dias de semana con la variable edad,, donde evidenciamos que para los adultos mayores de 60 años y más su uso del tiempo libre en las practicas deportivas es significativo para los dias lunes con relación al resto de la semana, donde el dia lunes tienen un 21% de probailidad de disfrutar su tiempo libre.
+
+```{r tabla7}
+knitr::kable(resultados[[7]][[2]], digits = 2, caption = "dia de semana de acuerdo a edad", format = "latex", booktabs = T)
+```
+
+## Tabla N.8
+
+En este caso, se resalta los resultados de la frecuencia simple mas significantivos del uso del tiempo y practicas deportivas de acuerdo a los dias en fin de semanas.
+
+```{r tabla8}
+knitr::kable(resultados[[8]], digits = 2, caption = "frecuencia simple por dia fin de semana en practicas deportivas")
+```
+
+## Tabla N.9
+
+para la **tabla 9** los resultados preliminares de acuerdo al uso de tiempo y practica deportiva en dia de fin de semana de acuerdo a genero, se puede observar que es de igual proporcion tanto en hombres como en mujer y no hay diferencias significativas en el uso del tiempo libre que efectuan los fines de semanas, asi podemos mostrar que en comparacion con los dias de semana se distribuye mejor el tiempo libre para los dias sabados y domingos en actividades recreativas, de ocio y vida social.
+
+```{r tabla9}
+knitr::kable(resultados[[9]][[2]], digits = 2, caption = "dia fin de semana de acuerdo a genero", format = "latex", booktabs = T)
+```
+
+
+\newpage
+
+## Tabla N.10
+
+finalmente en la **tabla 10** se muestra la relacion de acuerdo al uso de tiempo y practica deportiva en dia fin de semana de acuerdo a edad. para esta observacion es particular, ya qué los asultos mayores en edad de 60 años y mas tienen una mayor distribución del uso de su tiempo libre para los dias de fin de semana, en comparcion con sus dias de semana. pero significativamente los adultos entre edades de 40 años posees poco uso de su tiempo libre los dias sabados para su practica deportiva, recreativa u ocio en constraste con el dia domingo que significativamente poseen mas tiempo libre para su uso. 
+
+```{r tabla10}
+knitr::kable(resultados[[10]][[2]], digits = 2, caption = "dia fin de semana de acuerdo a edad", format = "latex", booktabs = T)
+```
+
+
+## Conclusión
+
+Finalmente este trabajo efectuado nos brinda una posibilidad de indagar más sobre el uso del tiempo libre el las personas, ya qué, las encuestas dedicadas a este tema del tiempo contribuye a la cuantificación del mejoramiento del bienestar de vida de las personas en su sociedad, al ser reveladoras de cuanto teimpo libre y en que actividades son efectuadas estos tiempos libre sobre saliendo entre hombre, mujer y niño, pero tambien la importancia de cuantificar los tramos de edad y traer a consideración los adultos mayores de 60 años y más. similarmente, [@castillo_espacio_2017] nos determina que del mismo modo en que el tiempo y el espacio deportivos han ido evolucionando segun sus cambios historicos, en tal sentido, estos cambios tambien muestran como cada sociedad tiene su propio espacio y tiempo libre en su uso para las practicas deportivas que hacen de su cararterización y cómo tambien esta cararterización es también haituada en las personas que conforman la sociedad.
+similarmente, [@gayo_patrones_2009] en la incroporación del concepto cultural en nuestra caracterizacion de nuestras sociedades en su uso del tiempo y practicas deportivas, recreativas o de ocio, es un factor explicativo de la desigualdad de nuestra sociedad chilena en los ambitos del uso del tiempo y practicas deportivas que se distribuyen como patrones culturales. por esa razon, desde la perspectiva de [@gayo_patrones_2009] se estima una focaliización de nuevas o diferentes formas en la que las practicas y gustos culturales se configuran, lo que nos demuestra que es una forma latente de estudiar nuestas sociedades o el cambio que se viene produciendo en ellas mismas;por eso, para [@eliasnorbet_deporte_2015]consideran que el ocio en el tiempo libre, donde las actividades recreativas son un medio para lograr un fin, que sería el de aliviar a las personas de las tensiones generadas por el trabajo y esto puede hacer que posteriormente aumenten su capacidad de trabajo, es decir, enfatizan que la funcion principal del ocio es liberar a las personas de la tensiones a través de la recreacion.
+
+En general, como se muestra en la encuesta ENUT-2015 poco mas del 50% de las personas encuestadas manifiestan estar en total satisfación con el uso de su tiempo libre pero sobre todo con su calidad de usarlos, pero hay que evidenciar que una proporción nos muestra todo lo contrario y esa propporción hay que mantenerla en monitoreo porque son un cambio significativo en la realidad social que nos muestran.
+
+\newpage
+# referencias
 
