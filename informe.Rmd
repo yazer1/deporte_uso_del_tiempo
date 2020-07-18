@@ -52,7 +52,7 @@ para el desarrollo y analisis del trabajo muestral sobre el uso del tiempo y pra
 \newpage
 
 
-## Tabla de Resultados Muestrales
+## Resultados Muestrales
 
 A continuación, se mostraran los resultados preliminares de las tablas seleccionadas como ejemplos; por otra parte, es de referenciar que deacuerdo con la encuesta ENUT-2015 una de las dimensiones que afectan la percepción de una vida de bienestar es la de no contar con un tiempo libre adeacudo en que se pueda utilizar para el bienestar propio de los individuos, similarmente para [@castillo_espacio_2017] al recurrir a los conceptos o categorias de espacio y tiempo, tenemos que referirnos a realidades fisicas mensurables y objetivables, porque, estas realidades se sustentan y tambien se organizan en nuestras vidas cotidianas.Por tanto, en Chile se presenta uno de los peores equilibrios de vida, al pretender combinar los usos del tiempo con el trabajo, con la familia, con los compromisos personale, con el disfrute y tambien con la recreación u Ocio; para eso, hay que tener presente que para [@castillo_espacio_2017] elespacio y tiempo pueden ser realidades sujetivas percibidas de modo distinto segun las personas y sus experiencias vividas.
 
@@ -146,7 +146,7 @@ knitr::kable(resultados[[10]][[2]], digits = 2, caption = "dia fin de semana de 
 ```
 
 
-## Conclusión
+## Discusión
 
 Finalmente este trabajo efectuado nos brinda una posibilidad de indagar más sobre el uso del tiempo libre el las personas, ya qué, las encuestas dedicadas a este tema del tiempo contribuye a la cuantificación del mejoramiento del bienestar de vida de las personas en su sociedad, al ser reveladoras de cuanto teimpo libre y en que actividades son efectuadas estos tiempos libre sobre saliendo entre hombre, mujer y niño, pero tambien la importancia de cuantificar los tramos de edad y traer a consideración los adultos mayores de 60 años y más. similarmente, [@castillo_espacio_2017] nos determina que del mismo modo en que el tiempo y el espacio deportivos han ido evolucionando segun sus cambios historicos, en tal sentido, estos cambios tambien muestran como cada sociedad tiene su propio espacio y tiempo libre en su uso para las practicas deportivas que hacen de su cararterización y cómo tambien esta cararterización es también haituada en las personas que conforman la sociedad.
 similarmente, [@gayo_patrones_2009] en la incroporación del concepto cultural en nuestra caracterizacion de nuestras sociedades en su uso del tiempo y practicas deportivas, recreativas o de ocio, es un factor explicativo de la desigualdad de nuestra sociedad chilena en los ambitos del uso del tiempo y practicas deportivas que se distribuyen como patrones culturales. por esa razon, desde la perspectiva de [@gayo_patrones_2009] se estima una focaliización de nuevas o diferentes formas en la que las practicas y gustos culturales se configuran, lo que nos demuestra que es una forma latente de estudiar nuestas sociedades o el cambio que se viene produciendo en ellas mismas;por eso, para [@eliasnorbet_deporte_2015]consideran que el ocio en el tiempo libre, donde las actividades recreativas son un medio para lograr un fin, que sería el de aliviar a las personas de las tensiones generadas por el trabajo y esto puede hacer que posteriormente aumenten su capacidad de trabajo, es decir, enfatizan que la funcion principal del ocio es liberar a las personas de la tensiones a través de la recreacion.
