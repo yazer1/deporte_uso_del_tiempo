@@ -2,6 +2,9 @@
 # Cargar base de datos
 enut<-readRDS("enut-editada.rds")
 
+install.packages("tinytex")
+tinytex::install_tinytex()
+
 
 #---- 1. RESULTADOS DE MUESTRA ----
 
@@ -25,7 +28,7 @@ tabla4<-ctable(enut$sati_tmp_recod, enut$edadrecod, prop = "c",
 #resultado N. 2
 #frecuencias simple y de %
 table(enut$Diasemrec)
-table(enut$Diasemrec, enut$sexoRec, enut$sati_tmp_recod,)
+table(enut$Diasemrec, enut$sexoRec, enut$sati_tmp_recod)
 prop.table(table(enut$Diasemrec, enut$sexoRec, enut$sati_tmp_recod),1)*100
 
 tabla5<-freq(enut$Diasemrec, weights = enut$pond, style = 'rmarkdown')
